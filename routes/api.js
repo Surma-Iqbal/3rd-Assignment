@@ -8,12 +8,12 @@ router.get("/hello", (req, res)=>{
 });
 
 router.get("/token",()=>{
-    
-})
+  res.send("I am post body")
+});
 
 router.post("/post",(req,res)=>{
-  res.send("I am post body");
-})
+  res.send("I am post body")
+});
 
 
 export default router;
