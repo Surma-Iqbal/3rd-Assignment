@@ -5,7 +5,9 @@ import ratelimit from "express-rate-limit";
 import helmet from "helmet";
 import hpp from "hpp";
 import mongoose from "mongoose";
+import dotenv from 'dotenv'
 import router from "./routes/api.js";
+dotenv.config()
 import { PORT } from "./app/config/config.js";
 
 const app = express();
